@@ -164,9 +164,14 @@ $$
 
 
 
-## Relaxation: $M=\frac {1} {\omega}(D-\omega E)$ et $N=(1-\omega)D-F$
+## Relaxation: $M=\frac {1} {\omega}(D+\omega E)$ et $N=(\frac{1}{\omega}-1)D-F$
 
 
 $$
 (Ax)_i = \sum_{j=1}^n a_{i,j}x_j
+$$
+
+$$
+
+
 $$
