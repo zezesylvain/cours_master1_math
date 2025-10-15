@@ -164,7 +164,7 @@ $$
 
 
 
-## Relaxation: $M=\frac {1} {\omega}D+ E)$ et $N=(\frac{1}{\omega}-1)D-F$
+## Relaxation: $M=\frac {1} {\omega}D+ E$ et $N=(\frac{1}{\omega}-1)D-F$
 
 
 $$
