@@ -37,4 +37,5 @@ nb = 12 pour 1e-8 omega = 1.125
 
 omega de 0 a 2 par pas de 0.001
 tracer le nombre d'iterations en fonction de omega
+A rendre avant le prochain cours c'est-a-dire avant le mercredi 29 octobre 2025 a 8h
 """

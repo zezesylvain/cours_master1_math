@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="de160add-f2fb-48ed-ab65-492bf7515d98" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/tp3.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/interpolation_polynomiale.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/methodes_iteratives.py" beforeDir="false" afterPath="$PROJECT_DIR$/methodes_iteratives.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/systeme_lineaire.py" beforeDir="false" afterPath="$PROJECT_DIR$/systeme_lineaire.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp3.py" beforeDir="false" afterPath="$PROJECT_DIR$/tp3.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +67,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1761123692498</updated>
-      <workItem from="1761123693504" duration="14208000" />
+      <workItem from="1761123693504" duration="21470000" />
     </task>
     <servers />
   </component>
