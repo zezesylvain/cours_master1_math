@@ -3,13 +3,9 @@
 Soit $f$ une fonction definie 👍
 
 $$
-
-
 f: [a, b] \rightarrow \mathbb{R}\\
 x: \rightarrow f(x)
-
 $$
-
 
 Soit une subdivision $X_n$ telle que:
 
@@ -25,25 +21,17 @@ $$
 
 ## Interpolation de Lagrange
 
-
 Le polynome d'interpolation de Lagrange $P$ de la fonction $f$ est definie par:
 
 $$
 P(x) = \sum_{i=1}^n f(x_i)L_i(x)
 $$
 
-
-
 avec
 
 $$
 L_i(x) = \prod_{j=1, j\neq i}^n \frac{x-x_j}{x_i-x_j}
 $$
-
-
-
-
-
 
 ## Interploation par spline quadratique
 
@@ -54,7 +42,6 @@ Considerons la subdivision $X_n$, $X_n: a =x_0<x_1<x_2<\dots<x_n = b$
 on a : $S(x_i) = f(x_i)  \; \forall x_i \in X_n$
 
 $S$ est continue et $S'$ est  continue
-
 
 $$
 S(x) = 
@@ -86,7 +73,6 @@ $$
 
 Chaque $S_i(x) = a_ix^2+b_ix+c_i$ represente 3 inconnues, or nous avons $i=0, 1, \dots, n-1$ soit $n$ fonctions $S_i$  Ce qui nous donne $3n$ inconnues
 
-
 # Hypotheses
 
 ## Hypothese 1: Interpolation $S(x_i) = f(x_i)$ $\forall i=0, 1, \dots, n$ soit $(n+1)$ Equations
@@ -98,8 +84,6 @@ Chaque $S_i(x) = a_ix^2+b_ix+c_i$ represente 3 inconnues, or nous avons $i=0, 1,
 ## $(n+1) + (n-1) +(n-1) = 3n-1$ Equations pour $3n$ inconnues
 
 ## Ce qui signifie que nous avons une solution a une constante pres
-
-
 
 # Resolution
 
@@ -124,10 +108,7 @@ S'_{i-1}(x_i) = S'_i(x_i) = z_i\\
 2a_{i-1}(x_i-x_{i-1})+b_{i-1} = z_i\\
 2a_{i-1}(x_i-x_{i-1}) = z_i - z_{i-1}\\
 a_{i-1} = \frac{1}{2} \frac{z_i - z_{i-1}}{x_i-x_{i-1}}
-
-
 $$
-
 
 ## Continuite de $S$ soit $S_ {i-1}(x_i)=S_i(x_i)$
 
@@ -143,7 +124,6 @@ $$
 
 Les coefficients $z_i$ sont determines si le terme de depart $z_0$ est connu.
 
-
 ## $z_0 = S'(x_0)$
 
 si la fonction $f$ est connue, on prend:
@@ -153,3 +133,6 @@ si la fonction $f$ est connue, on prend:
 sinon on prend
 
 ## $z_0 = S'(x_0) = 0$
+
+
+# Librairie Sympy, Numpy
