@@ -1,13 +1,10 @@
 # Methodes iteratives $Ax=b$
 
-
 ## Cas General $A = M-N$
 
 $$
 Ax=b\\
 A = M-N\\
-
-
 $$
 
 On suppose qu'il existe une suite $x^k$
@@ -19,8 +16,6 @@ x^{k+1} = M^{-1}Nx^k + d
 \end{cases}
 \\
 \text{avec } d = M^{-1}b
-
-
 $$
 
 ## Algo
@@ -40,13 +35,11 @@ nb_{iter} = 0\\
 sinon \;\\\text{\;\;\; Pas de solution}
 $$
 
-
 # Determination du schema
 
 $$
 Mx^{k+1} = Nx^k + b
 $$
-
 
 $$
 A = M-N\\
@@ -81,15 +74,12 @@ N = -E-F\Rightarrow N_{i,j} = -E_{i,j}-F_{i,j} =
 \;\;\; (eq_5)
 $$
 
-
-
 En injectant $(eq4)$ dans $(eq2)$, on obtient:
 
 $$
 (Mx^{k+1})_i = \sum_{j=1}^nM_{i,j}x^{k+1}_j = \sum_{j=1}^{i-1}M_{i,j}x^{k+1}_j + M_{i,i}x^{k+1}_i+\sum_{j=i+1}^n M_{i,j}x^{k+1}_j\\
 (Mx^{k+1})_i = a_{i,i}x^{k+1}_i \;\;\; (eq6)
 $$
-
 
 En injectant $(eq5)$ dans $(eq3)$, on obtient:
 
@@ -108,10 +98,7 @@ a_{i,i}x^{k+1}_i = -\sum_{j=1, j\neq i}^{n}a_{i,j}x^k_j+ b_i\\
 x^{k+1}_i = \frac{b_i - \sum_{j=1, j\neq i}^{n}a_{i,j}x^k_j}{a_{i,i}} \;\;\; (eq10)
 $$
 
-
-
 ## Gauss Seidel: $M=D+E$ et $N=-F$
-
 
 Nous avon donc:
 
@@ -152,8 +139,6 @@ $$
 (Nx^k+b)_i = b_i -\sum_{j=i+1}^n a_{i,j}x^k_j \;\;\; (eq23)
 $$
 
-
-
 En faisant $(eq22) = (eq23)$, nous obtenons:
 
 $$
@@ -163,15 +148,60 @@ x^{k+1}_i = \frac{b_i -\sum_{j=i+1}^n a_{i,j}x^k_j - \sum_{j=1}^{i-1} a_{i,j}x^{
 $$
 
 
+# $x^{k+1}_i = \frac{b_i -\sum_{j=i+1}^n a_{i,j}x^k_j - \sum_{j=1}^{i-1} a_{i,j}x^{k+1}_j}{a_{i,i}}$
 
-## Relaxation: $M=\frac {1} {\omega}D+ E$ et $N=(\frac{1}{\omega}-1)D-F$
 
+
+## 
+
+# Relaxation: $M=\frac {1} {\omega}D+ E$ et $N=(\frac{1}{\omega}-1)D-F$
 
 $$
 (Ax)_i = \sum_{j=1}^n a_{i,j}x_j
 $$
 
-$$
 
 
+
+
+# $x_i^{k+1} =\frac{1}{a_{i,i}}(\omega b_i + (1-\omega)a_{i,i} x_i^k -\omega(\sum_{j=i+1}^na_{i,j}x_j^k + \sum_{j=1}^{i-1}a_{i,j}x_j^{k+1}) $
+
+
+
 $$
+Donnees:\; A,\; b,\; \omega\\
+inconnue \; x
+$$
+
+## Algo Relaxation
+
+### Donnees: $A$, $b$, $x^{old}$,  $\omega$
+
+$n=$ Dimension du probleme
+
+$\; x^{new}=o(n)$
+
+Pour $i$ allant de 1 a $n$ Faire:
+
+<pre><code>
+S1 = 0
+Pour j allant de 1 a i-1 Faire
+     S1 = S1 + a<sub>i,j</sub><sup>new</sup>
+Fin Pour
+
+<pre><code>
+S2 = 0
+Pour j allant de i+1 a n Faire
+    S2 = S2 + a<sub>i,j</sub>x<sub>j</sub><sup>old</sup>
+Fin Pour
+
+
+$x_i^{new}$ = $\frac{1}{a_{i,i}}$($\omega b_i$+(1-$\omega )a_{i,i}x_i^{old}$ - $\omega$(S1+S2)
+
+Fin Pour
+
+$$
+x_1
+$$
+
+# Algo de Jacobi $x^{k+1}_i = \frac{b_i - \sum_{j=1, j\neq i}^{n}a_{i,j}x^k_j}{a_{i,i}} \;\;\; (eq10)$
