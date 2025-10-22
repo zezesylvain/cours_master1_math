@@ -1,6 +1,6 @@
-import numpy as np
+#import numpy as np
 from scipy.linalg import lu
-from methodes_iteratives import jacobi_iteration
+from methodes_iteratives import *
 
 def systeme_triangulaire_inferieur(A, b):
     """
@@ -113,7 +113,7 @@ def resolution_systeme_lineaire_lu(A, b):
 
 # Supposons que jacobi_iteration est définie comme précédemment
 
-def resolution_par_methode_iterative_amelioree(A, b, precision, nb_it_max=1000, x0=None):
+def resolution_par_methode_iterative_amelioree(A, b, precision, x0=None, methode = 'jacobi', omega = 1, nb_it_max=1000):
     """
         Resoud un systeme lineaire par le schéma de Jacobi.
 
@@ -158,8 +158,14 @@ def resolution_par_methode_iterative_amelioree(A, b, precision, nb_it_max=1000, 
     # Boucle tant que l'écart entre les itérations est trop grand
     # ET que le nombre max d'itérations n'est pas atteint
     while norm_diff > precision and nb_it < nb_it_max:
-        # 1. Calculer la nouvelle solution
-        x_new = jacobi_iteration(A, b, x_old)
+
+        # 1. Calculer la nouvelle solution en fonction de la methode indiquee
+        if methode == 'gauss':
+            x_new = gauss_seidel_step(A, b, x_old)
+        elif methode == 'relaxation':
+            x_new = relaxation_step(A, b, x_old, omega)
+        else:
+            x_new = jacobi_iteration(A, b, x_old)
 
         # 2. Calculer le critère d'arrêt : ||x_new - x_old||
         norm_diff = np.linalg.norm(x_new - x_old)
@@ -177,3 +183,5 @@ def resolution_par_methode_iterative_amelioree(A, b, precision, nb_it_max=1000, 
     else:
         # Nombre max d'itérations atteint
         return x, nb_it, False
+
+

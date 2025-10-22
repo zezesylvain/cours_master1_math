@@ -5,11 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="de160add-f2fb-48ed-ab65-492bf7515d98" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/methodes_iteratives.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/factorisation_lu.md" beforeDir="false" afterPath="$PROJECT_DIR$/factorisation_lu.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/methode_iterative.md" beforeDir="false" afterPath="$PROJECT_DIR$/methode_iterative.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tp3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/methodes_iteratives.py" beforeDir="false" afterPath="$PROJECT_DIR$/methodes_iteratives.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/systeme_lineaire.py" beforeDir="false" afterPath="$PROJECT_DIR$/systeme_lineaire.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,7 +38,9 @@
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "Python.methodes_iteratives.executor": "Run",
+    "Python.tp3.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
     "junie.onboarding.icon.badge.shown": "true",
@@ -68,7 +68,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1761123692498</updated>
-      <workItem from="1761123693504" duration="10793000" />
+      <workItem from="1761123693504" duration="14208000" />
     </task>
     <servers />
   </component>
@@ -76,6 +76,7 @@
     <option name="version" value="3" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Apprentissage$tp3.coverage" NAME="tp3 Coverage Results" MODIFIED="1761144761705" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Apprentissage$methodes_iteratives.coverage" NAME="methodes_iteratives Coverage Results" MODIFIED="1761133257887" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
