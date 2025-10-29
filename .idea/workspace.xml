@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="de160add-f2fb-48ed-ab65-492bf7515d98" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/spline_quadratique.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spline_quadratique.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interpolation_polynomiale.md" beforeDir="false" afterPath="$PROJECT_DIR$/interpolation_polynomiale.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sympy.md" beforeDir="false" afterPath="$PROJECT_DIR$/sympy.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spline_quadratique.py" beforeDir="false" afterPath="$PROJECT_DIR$/spline_quadratique.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

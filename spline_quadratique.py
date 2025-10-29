@@ -10,7 +10,7 @@ x = sp.Symbol('x')
 
 # Exemple de fonction f(x) que vous pouvez modifier
 # f(x) = sin(x) * exp(-x/5)
-f_sym = sp.sin(x) * sp.exp(-x / 5)
+f_sym = sp.sin(x) * sp.exp(-x**2)
 
 # Calcul symbolique de la dérivée f'(x)
 f_prime_sym = sp.diff(f_sym, x)
@@ -21,7 +21,7 @@ f_prime_num = sp.lambdify(x, f_prime_sym, 'numpy')
 
 # Paramètres de l'interpolation
 x_min, x_max = 0, 10
-N_intervalles = 100  # Nombre d'intervalles (n dans l'algo, il y aura N_intervalles + 1 points)
+N_intervalles = 10  # Nombre d'intervalles (n dans l'algo, il y aura N_intervalles + 1 points)
 nb = 20  # 2.5. nb: nombre de points par intervalle pour l'évaluation (nb+1 total)
 epsilon = 1e-15  # 7. Epsilon pour le calcul de l'erreur
 
