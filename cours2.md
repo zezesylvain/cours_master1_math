@@ -224,3 +224,8 @@ $$
 8. On trace les graphique
    1. $sol_{exacte}$ et $sol_{approchee}$ sur le meme graphique
    2. Erreur sur un autre graphique
+
+
+
+
+# Git: C'est quoi?
