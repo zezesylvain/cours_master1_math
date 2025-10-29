@@ -99,7 +99,7 @@ print(z)
 plt.figure(figsize=(12, 6))
 
 # 8.1. sol_exacte et sol_approchee sur le meme graphique
-plt.subplot(1, 2, 1)
+#plt.subplot(2, 2, 1)
 plt.plot(points_np, sol_exacte_np, label=r'$f(x)$ (sol_exacte)', color='green')
 plt.plot(points_np, sol_approchee_np, label=r'$S(x)$ (sol_approchee)', linestyle='--', color='red')
 plt.scatter(x_knots, y_knots, label='Noeuds ($x_i, y_i$)', color='blue', zorder=5)
@@ -110,7 +110,8 @@ plt.legend()
 plt.grid(True, linestyle=':', alpha=0.6)
 
 # 8.2. Erreur sur un autre graphique
-plt.subplot(1, 2, 2)
+plt.figure(figsize=(12, 6))
+#plt.subplot(2, 2, 4)
 plt.plot(points_np, Erreur, color='orange')
 plt.title(r"Erreur $\log_{10}(|f(x) - S(x)| + \epsilon)$")
 plt.xlabel("x")
