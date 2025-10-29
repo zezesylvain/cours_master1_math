@@ -1,0 +1,2 @@
+user = User.objects.get(email="zeze.sylvain@univ-na.ci")
+UserDashboard.objects.update_or_create(user=user, dashboard="webmaster", defaults={"active": True})

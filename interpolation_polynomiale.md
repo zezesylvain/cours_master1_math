@@ -87,11 +87,11 @@ Chaque $S_i(x) = a_ix^2+b_ix+c_i$ represente 3 inconnues, or nous avons $i=0, 1,
 
 # Resolution
 
-## Posons $S_i(x) = a_i(x-x_i)^2+b_i(x-x_i) + c_i$
+## Posons $  S_i(x) = a_i(x-x_i)^2+b_i(x-x_i) + c_i \;\; (eq3)$
 
 ce qui donne:
 
-## Hypothse 1: $c_i = f(x_i)$
+## Hypothse 1: $c_i = f(x_i) \;\; (eq5)$
 
 ## Derivee S_i)$  : $ : $S'_i(x)= 2a_i(x-x_i)+b_i$
 
@@ -99,7 +99,7 @@ ce qui donne:
 
 Ce qui nous donne
 
-## $b_i = z_i$ $\forall i = 1 \; , 2, \dots,  n-1 $
+## $b_i = z_i$ $\forall i = 1 \; , 2, \dots,  n-1 \;\; (eq10) $
 
 ## Continuiteé de $S'$
 
@@ -107,22 +107,23 @@ $$
 S'_{i-1}(x_i) = S'_i(x_i) = z_i\\
 2a_{i-1}(x_i-x_{i-1})+b_{i-1} = z_i\\
 2a_{i-1}(x_i-x_{i-1}) = z_i - z_{i-1}\\
-a_{i-1} = \frac{1}{2} \frac{z_i - z_{i-1}}{x_i-x_{i-1}}
+a_{i-1} = \frac{1}{2} \frac{z_i - z_{i-1}}{x_i-x_{i-1}} \;\; (eq20)
 $$
 
 ## Continuite de $S$ soit $S_ {i-1}(x_i)=S_i(x_i)$
 
 $$
-S_{i-1}(x_i) = S_i(x_i)\\
-a_{i-1}(x_i-x_{i-1})^2 + b_{i-1}(x_i-x_{i-1}) + c_{i-1} = f(x_i) = y_i\\
-a_{i-1}(x_i-x_{i-1})^2 + z_{i-1}(x_i-x_{i-1}) = y_i - y_{i-1}\\
-\frac{1}{2} \frac{z_i - z_{i-1}}{x_i-x_{i-1}}(x_i-x_{i-1})^2+ z_{i-1}(x_i-x_{i-1}) = y_i - y_{i-1}\\
-(x_i-x_{i-1})(0,5z_i-0,5z_{i-1}+z_{i-1}) = y_i - y_{i-1}\\
-0,5(z_i+z_{i-1}) = \frac{y_i - y_{i-1}}{x_i-x_{i-1}}\\
-z_i = 2 \frac{y_i - y_{i-1}}{x_i-x_{i-1}} - z_{i-1}
+🎉️ \;\; (eq30)
 $$
 
 Les coefficients $z_i$ sont determines si le terme de depart $z_0$ est connu.
+
+## Reecrivons $(eq3)$ avec les nouvelles valeurs des coefficients:
+
+$$
+S_i(x) = S_i(x) = a_i(x-x_i)^2+b_i(x-x_i) + c_i\\
+S_i(x) = \frac{1}{2} \frac{z_{i+1} - z_i}{x_{i+1}-x_i}(x-x_i)^2+z_i(x-x_i)^2+f(x_i) \;\; (eq40)
+$$
 
 ## $z_0 = S'(x_0)$
 
@@ -132,7 +133,23 @@ si la fonction $f$ est connue, on prend:
 
 sinon on prend
 
-## $z_0 = S'(x_0) = 0$
+## $z0=S′(x0)=0z_0 = S'(x_0) = 0$
+
+
+## Algo
+
+### 1- $f(x)$, $a, b$, $X_n = \{a=x_0<x_1<x_2<\dots<x_n=b\}$
+
+### 1-1- Calcul des $y_i = f(x_i)$
+
+
+### 2- $z_0=f'(x_0)$
+
+### 3- Calcul de $zi$:  $z_i = 2 \frac {y_i - y_{i-1}} {x_i-x_{i-1}} - z_ {i-1}$ $\forall i=1, 2, \dots n$
+
+## 4- $S_i(x) = \frac{1}{2} \frac{z_{i+1} - z_i}{x_{i+1}-x_i}(x-x_i)^2+z_i(x-x_i)^2+f(x_i)$
+
+
 
 
 # Librairie Sympy, Numpy
