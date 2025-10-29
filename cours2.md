@@ -229,3 +229,4 @@ $$
 
 
 # Git: C'est quoi?
+J'adore Git mais je ne comprendrs pas tout sur lui>
