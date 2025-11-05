@@ -21,7 +21,7 @@ f_prime_num = sp.lambdify(x, f_prime_sym, 'numpy')
 
 # Paramètres de l'interpolation
 x_min, x_max = 0, 10
-N_intervalles = 20  # Nombre d'intervalles (n dans l'algo, il y aura N_intervalles + 1 points)
+N_intervalles = 50  # Nombre d'intervalles (n dans l'algo, il y aura N_intervalles + 1 points)
 nb = 20  # 2.5. nb: nombre de points par intervalle pour l'évaluation (nb+1 total)
 epsilon = 1e-15  # 7. Epsilon pour le calcul de l'erreur
 

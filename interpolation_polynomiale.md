@@ -135,21 +135,22 @@ sinon on prend
 
 ## $z0=S′(x0)=0z_0 = S'(x_0) = 0$
 
-
 ## Algo
 
 ### 1- $f(x)$, $a, b$, $X_n = \{a=x_0<x_1<x_2<\dots<x_n=b\}$
 
 ### 1-1- Calcul des $y_i = f(x_i)$
 
-
 ### 2- $z_0=f'(x_0)$
 
 ### 3- Calcul de $zi$:  $z_i = 2 \frac {y_i - y_{i-1}} {x_i-x_{i-1}} - z_ {i-1}$ $\forall i=1, 2, \dots n$
 
-## 4- $S_i(x) = \frac{1}{2} \frac{z_{i+1} - z_i}{x_{i+1}-x_i}(x-x_i)^2+z_i(x-x_i)^2+f(x_i)$
+## 4- $S_i(x) = \frac{1}{2} \frac{z_{i+1} - z_i}{x_{i+1}-x_i}(x-x_i)^2+z_i(x-x_i)+f(x_i)$
 
+# 5- Calcul de  $\int_a^b S(x)dx$
 
-
+$$
+\int_a^b S(x)dx = \sum_{i=0}^{n-1}\int_{x_i}^{x_{i+1}}S_i(x)dx
+$$
 
 # Librairie Sympy, Numpy
