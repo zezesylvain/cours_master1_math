@@ -147,12 +147,13 @@ a_{i,i}x^{k+1}_i = b_i -\sum_{j=i+1}^n a_{i,j}x^k_j - \sum_{j=1}^{i-1} a_{i,j}x^
 x^{k+1}_i = \frac{b_i -\sum_{j=i+1}^n a_{i,j}x^k_j - \sum_{j=1}^{i-1} a_{i,j}x^{k+1}_j}{a_{i,i}}
 $$
 
-
 # $x^{k+1}_i = \frac{b_i -\sum_{j=i+1}^n a_{i,j}x^k_j - \sum_{j=1}^{i-1} a_{i,j}x^{k+1}_j}{a_{i,i}}$
 
 
 
-## 
+
+
+
 
 # Relaxation: $M=\frac {1} {\omega}D+ E$ et $N=(\frac{1}{\omega}-1)D-F$
 
@@ -160,13 +161,7 @@ $$
 (Ax)_i = \sum_{j=1}^n a_{i,j}x_j
 $$
 
-
-
-
-
 # $x_i^{k+1} =\frac{1}{a_{i,i}}(\omega b_i + (1-\omega)a_{i,i} x_i^k -\omega(\sum_{j=i+1}^na_{i,j}x_j^k + \sum_{j=1}^{i-1}a_{i,j}x_j^{k+1}) $
-
-
 
 $$
 Donnees:\; A,\; b,\; \omega\\
